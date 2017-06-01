@@ -66,7 +66,9 @@ Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcontrol__values__t.html#ae15bec4f671ca42ad237b101064b9067">lock_lost</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnco__values__t.html">nco_values_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcontrol__values__t.html#a540e96b5bc519659bb69d3db0da049c4">value_list</a></td></tr>
 </table>
-<hr/><h2>Member Data Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Code and carrier values to control multiple hardware channel. </p>
+</div><hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a5ec4848866445166eb81b05340af7788"></a><!-- doxytag: member="control_values_t::hw_channel_id" ref="a5ec4848866445166eb81b05340af7788" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -77,6 +79,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Unique ID of the hardware channel, which sent the IQ values. </p>
 
 </div>
 </div>
@@ -90,6 +93,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Hardware timestamp, which is required for external tracking (clock ticks, overflow at 2^32). </p>
 
 </div>
 </div>
@@ -103,6 +107,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>True if tracking of the satellite is lost for the hardware channel, which sent the IQ values. </p>
 
 </div>
 </div>
@@ -116,6 +121,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Timestamp source </p>
 
 </div>
 </div>
@@ -129,6 +135,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>"Seconds since 1.1.1970 0:00 in time_system (s). </p>
 
 </div>
 </div>
@@ -142,6 +149,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>List of control values for multiple channels. </p>
 
 </div>
 </div>
@@ -163,7 +171,7 @@ Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 29 2017 09:31:33 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

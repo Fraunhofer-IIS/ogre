@@ -162,14 +162,19 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Current state of the tracking channel </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a4d41e48b26ebe9d6f7c34765741a083aafd6a0e4343048b10646dd2976cc5ad18"></a><!-- doxytag: member="IDLE" ref="a4d41e48b26ebe9d6f7c34765741a083aafd6a0e4343048b10646dd2976cc5ad18" args="" -->IDLE</em>&nbsp;</td><td>
+<p>Channel is stopped. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a4d41e48b26ebe9d6f7c34765741a083aaa0c0f46a51df7452ca25be1d4594e8ba"></a><!-- doxytag: member="SEARCHING" ref="a4d41e48b26ebe9d6f7c34765741a083aaa0c0f46a51df7452ca25be1d4594e8ba" args="" -->SEARCHING</em>&nbsp;</td><td>
+<p>Channel is started and executes an acquisition.. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a4d41e48b26ebe9d6f7c34765741a083aa5986a3a3f83542988ce51aa0d5605b56"></a><!-- doxytag: member="PULL_IN" ref="a4d41e48b26ebe9d6f7c34765741a083aa5986a3a3f83542988ce51aa0d5605b56" args="" -->PULL_IN</em>&nbsp;</td><td>
+<p>Tracking is started. Channel tries to achieve the phase lock. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a4d41e48b26ebe9d6f7c34765741a083aa59faf14a7ce5cad56789ae9b4905f923"></a><!-- doxytag: member="SYNCED" ref="a4d41e48b26ebe9d6f7c34765741a083aa59faf14a7ce5cad56789ae9b4905f923" args="" -->SYNCED</em>&nbsp;</td><td>
+<p>Channel is in phase lock and receives the navigation message. </p>
 </td></tr>
 </table>
 </dd>
@@ -187,6 +192,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>The coordinate system. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a816672bec4c095705ef69d82fc51ee45af70bb78309239fefde48b7ad6c12a60c"></a><!-- doxytag: member="WGS84" ref="a816672bec4c095705ef69d82fc51ee45af70bb78309239fefde48b7ad6c12a60c" args="" -->WGS84</em>&nbsp;</td><td>
 </td></tr>
@@ -206,18 +212,25 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>The type of the position calculation. </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="ade15929855a5aaf29026d5316449606ea56e7b9aaafd3b7f59b93c8075e18249d"></a><!-- doxytag: member="PRECISION_NO_FIX" ref="ade15929855a5aaf29026d5316449606ea56e7b9aaafd3b7f59b93c8075e18249d" args="" -->PRECISION_NO_FIX</em>&nbsp;</td><td>
+<p>No position calculated. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ade15929855a5aaf29026d5316449606ea624f759adf470dce9cee0a547d87ae75"></a><!-- doxytag: member="PRECISION_2D" ref="ade15929855a5aaf29026d5316449606ea624f759adf470dce9cee0a547d87ae75" args="" -->PRECISION_2D</em>&nbsp;</td><td>
+<p>2D single point position. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ade15929855a5aaf29026d5316449606ea94a7fa7995756511adcd486854651db3"></a><!-- doxytag: member="PRECISION_3D" ref="ade15929855a5aaf29026d5316449606ea94a7fa7995756511adcd486854651db3" args="" -->PRECISION_3D</em>&nbsp;</td><td>
+<p>3D single point position. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ade15929855a5aaf29026d5316449606ea229eb390d24cbac56aef97f18fa74236"></a><!-- doxytag: member="PRECISION_DGPS" ref="ade15929855a5aaf29026d5316449606ea229eb390d24cbac56aef97f18fa74236" args="" -->PRECISION_DGPS</em>&nbsp;</td><td>
+<p>DGPS position. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ade15929855a5aaf29026d5316449606ea3aa9dd39876bc6bcc212aa3a147597a8"></a><!-- doxytag: member="PRECISION_RTK_FLOAT" ref="ade15929855a5aaf29026d5316449606ea3aa9dd39876bc6bcc212aa3a147597a8" args="" -->PRECISION_RTK_FLOAT</em>&nbsp;</td><td>
+<p>RTK position float. </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="ade15929855a5aaf29026d5316449606eae045cb275d214f26bf0e9113f9261244"></a><!-- doxytag: member="PRECISION_RTK_FIX" ref="ade15929855a5aaf29026d5316449606eae045cb275d214f26bf0e9113f9261244" args="" -->PRECISION_RTK_FIX</em>&nbsp;</td><td>
+<p>RTK position fix. </p>
 </td></tr>
 </table>
 </dd>
@@ -264,6 +277,7 @@ Functions</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Timestamp source </p>
 <dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
 <tr><td valign="top"><em><a class="anchor" id="a20bddc7c6d719fa872cab2c474655205a57cc238145ec1361c72c327674c0d754"></a><!-- doxytag: member="SYSTEM" ref="a20bddc7c6d719fa872cab2c474655205a57cc238145ec1361c72c327674c0d754" args="" -->SYSTEM</em>&nbsp;</td><td>
 </td></tr>
@@ -521,7 +535,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 29 2017 09:31:33 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:34 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

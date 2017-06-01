@@ -73,7 +73,10 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#a802f02f9881d3aa28875e14951d8923e">mUseTracking</a></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>This is an external tracking interface class which provides pure virtual methods, which must be implemented in the derived external tracking program. The derived external tracking class can be registered at <a class="el" href="classOgreControllerBackend.html">OgreControllerBackend</a> to receive data from the GNSS receiver. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classOgreControllerBackend.html">OgreControllerBackend</a> </dd></dl>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab5c9f0cc548e8caa0581c1e0ae97c535"></a><!-- doxytag: member="ExternalTrackingIfc::ExternalTrackingIfc" ref="ab5c9f0cc548e8caa0581c1e0ae97c535" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -104,6 +107,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Check if the class is used for tracking. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true, if information is sent over the interface </dd></dl>
 
 </div>
 </div>
@@ -121,6 +126,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Provides tracking initialization parameters as soon as a new tracking channel is started.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">trkInit</td><td>Gives the tracking initialization information </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -138,6 +150,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Provides the measurements from tracking channels.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chMeas</td><td>Channel measurements information </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -165,6 +184,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Provides correlation values received from receiver program and updates the control values (NCOs) in the receiver program calculated according to the user specified approach in external tracking program. Approach may be scalar tracking, vector tracking, deeply coupling or similar.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">corrVals</td><td>Correlation values from hardware </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctlVals</td><td>Control values which is sent back to hardware </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -182,6 +209,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Provides the ephemeris data for GPS and Galileo. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ephmData</td><td>Ephemeris information for satellite position calculation </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -199,6 +233,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Provides the user position, velocity, clockbias and drift information.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pvtCalc</td><td>Gives position, velocity and clock information </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -216,6 +257,13 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Provides information about the visible satellites.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">satRcvRel</td><td>Contains the satellite information </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -233,6 +281,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Specify if the class is used for tracking or only receives PVT and channel measurement.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">use</td><td>If true, correlation values are sent over the interface otherwise not</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="classExternalTrackingIfc.html#a848fe743b3728fdace342bbbab6e8f7a">newCorrelation</a> </dd></dl>
 
 </div>
 </div>
@@ -268,7 +324,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 29 2017 09:31:33 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

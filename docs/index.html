@@ -41,6 +41,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <div class="textblock"><h1>OpenGnssReceiver API</h1>
+<p>Application Programming Interface (API) for external loop closure: An open interface is developed via which a developer can communicate with the GNSS receiver program using some external tracking program. The goal is to extend OGRP to support external loop closure using this interface. This allows the implementation of different vector tracking loops or coupling (loose, tight or deep) with different sensor types.  </p>
+<p>Current example implementation using API Standard scalar tracking implementation with external loop closure using the developed API is performed. Aim here is to close the standard tracking loops from the external program. Correlation values from individual hardware channels of the receiver program are received and NCO values to the corresponding channels from external tracking program are sent back. External tracking program performs the following functions:  </p>
+<p>Initialize tracking at the start of new tracking channel Implement discriminator functions for code and carrier Implement second order loop filter for code and carrier, generating corresponding NCO values  </p>
+<p>Results and performance comparison of this external tracking implementation using API, with that of standard internal receiver tracking loops (without API) shows a well agreement.  </p>
 </div></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -56,7 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 29 2017 09:31:33 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:34 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

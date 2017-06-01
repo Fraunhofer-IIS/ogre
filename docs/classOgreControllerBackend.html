@@ -89,7 +89,9 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">ReceiverControllerBase *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a67ca67e134abb6d51496e43216639468">mpRecController</a></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Provides access to the GNSS receiver. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad84644f9b0e1b73f02310e3de55ab9d1"></a><!-- doxytag: member="OgreControllerBackend::OgreControllerBackend" ref="ad84644f9b0e1b73f02310e3de55ab9d1" args="(void)" -->
 <div class="memitem">
 <div class="memproto">
@@ -138,6 +140,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable channel measurements message (OGRP)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>if true channel measurements message is enable, otherwise disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -155,6 +164,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable ephemeris message (OGRP)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>if true ephemeris message is enable, otherwise disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -172,6 +188,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable GALILEO E1.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on</td><td>If true GALILEO is enabled, otherwise not </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -189,6 +212,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable GPS L1CA. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on</td><td>If true GPS L1CA is enabled, otherwise not </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -206,6 +236,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable printing of channel states</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>If true channel states are printed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -223,6 +260,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable PVT calculation message (OGRP)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>if true PVT calculation message is enable, otherwise disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -240,6 +284,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable satellite info message (OGRP)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>if true satellite info message is enable, otherwise disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -257,6 +308,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable/disable secondary channels GPS L5 and Galileo E5a</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on</td><td>If true secondary channles are enabled, otherwise not </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -274,6 +332,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Enable tertiary channels GPS L2C</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">on</td><td>If on tertiary channels are enabled, otherwise not </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -290,6 +355,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="return"><dt><b>Returns:</b></dt><dd>The version string </dd></dl>
 
 </div>
 </div>
@@ -306,6 +372,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Method to check if the receiver is running or not. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true if the receiver is running otherwise false </dd></dl>
 
 </div>
 </div>
@@ -322,6 +390,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Load the last position of the receiver from $HOME/.fhg/ogre.position.ogrp </p>
 
 </div>
 </div>
@@ -339,6 +408,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Register an instance of external tracking in receiver program.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">extTrk</td><td><a class="el" href="classExternalTrackingIfc.html">ExternalTrackingIfc</a> class</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>$see <a class="el" href="classExternalTrackingIfc.html">ExternalTrackingIfc</a> </p>
 
 </div>
 </div>
@@ -355,6 +432,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Save the last receiver position to $HOME/.fhg/ogre.position.ogrp </p>
 
 </div>
 </div>
@@ -372,6 +450,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set data/pilot tracking for GPS L5 and Galileo E5a</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>DATA_ONLY: Data tracking only, PILOT_ONLY: Pilot tracking, with data bit extraction from data signal, DATA_PILOT: Joint data - pilot tracking. NOT SUPPORTED YET. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -389,6 +474,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>To set GPS L1CA and Galileo E1 loop bandwidths.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bw</td><td>The bandwiths for DLL, FLL and PLL </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -406,6 +498,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>To set GPS L2C loop bandwidths.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bw</td><td>The bandwiths for DLL, FLL and PLL </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -423,6 +522,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>To set GPS L5 and Galileo E5a loop bandwidths.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bw</td><td>The bandwiths for DLL, FLL and PLL </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -440,6 +546,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>To set OGRP output sink.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">output</td><td>0: STDOUT, 1: TCP, 2: ZeroMq, 3: OFF </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -457,6 +570,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set the position rate [Hz].</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rateInHz</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -474,6 +594,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Starts all GNSS receiver threads and returns only, if an error occured or a interrupt or terminate signal is received (e.g. CTRL+C). </p>
 
 </div>
 </div>
@@ -491,6 +612,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Starts all GNSS receiver threads and returns immediately. </p>
 
 </div>
 </div>
@@ -508,6 +630,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Stops all threads of the GNSS receiver program.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">withChannelController</td><td>Option to stop the channel controller (default is true) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -543,7 +672,7 @@ Private Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Sat Apr 29 2017 09:31:33 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
