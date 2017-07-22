@@ -82,6 +82,10 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsingle__measurement__t.html">single_measurement_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structchannel__measurements__t.html">channel_measurements_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpvt__calculation__t.html">pvt_calculation_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structionosphere__klobuchar__t.html">ionosphere_klobuchar_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structionosphere__nequick__t.html">ionosphere_nequick_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgnss__time__t.html">gnss_time_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structggto__parameters__t.html">ggto_parameters_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html">ExternalTrackingIfc</a></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -113,6 +117,15 @@ Enumerations</h2></td></tr>
 <a class="el" href="ExternalTrackingIfc_8h.html#a4d41e48b26ebe9d6f7c34765741a083aa5986a3a3f83542988ce51aa0d5605b56">PULL_IN</a>, 
 <a class="el" href="ExternalTrackingIfc_8h.html#a4d41e48b26ebe9d6f7c34765741a083aa59faf14a7ce5cad56789ae9b4905f923">SYNCED</a>
  }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a> { <br/>
+&#160;&#160;<a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cfa2c56d07da8a08a92de9453a00e31d55d">UTC</a>, 
+<a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cfa569efac7b806b48d344a6a986b208931">GPST</a>, 
+<a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cfa8fc7c6036de659fcb61e9aa865cbf7f6">GST</a>, 
+<a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cfa2fb85f4d41565b22ad15accfde38f821">GLONASST</a>, 
+<br/>
+&#160;&#160;<a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cfa5bd8e4e6e6e3122f89b5bbcf111bf32f">BDT</a>
+<br/>
+ }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#a816672bec4c095705ef69d82fc51ee45">coordinate_system_t</a> { <a class="el" href="ExternalTrackingIfc_8h.html#a816672bec4c095705ef69d82fc51ee45af70bb78309239fefde48b7ad6c12a60c">WGS84</a>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#ade15929855a5aaf29026d5316449606e">precision_t</a> { <br/>
@@ -135,6 +148,9 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#a1f654021cea3e0733667b6f9f5fbc598">registerNewEphemerisDataCb</a> (void *tracking, void(*callback)(const <a class="el" href="structephemeris__data__t.html">ephemeris_data_t</a> ephmData))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#acc3e6941b2e874faa40ac1c8eacbadbd">registerNewChannelMeasurementsCb</a> (void *tracking, void(*callback)(const <a class="el" href="structchannel__measurements__t.html">channel_measurements_t</a> chMeas))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#a893fb744132fa9cf8475bb560121714c">registerNewPvtCalculationCb</a> (void *tracking, void(*callback)(const <a class="el" href="structpvt__calculation__t.html">pvt_calculation_t</a> pvtCalc))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#a2695b6fe49fe8968999724822156ac50">registerNewIonosphereKlobucharCb</a> (void *tracking, void(*callback)(const <a class="el" href="structionosphere__klobuchar__t.html">ionosphere_klobuchar_t</a> iono))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#aec12f66056d2013601ecb07c3e42cca1">registerNewIonosphereNequickCb</a> (void *tracking, void(*callback)(const <a class="el" href="structionosphere__nequick__t.html">ionosphere_nequick_t</a> iono))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#a6f0557caf0c95e1dbe81ef123da11e6d">registerNewGgtoParametersCb</a> (void *tracking, void(*callback)(const <a class="el" href="structggto__parameters__t.html">ggto_parameters_t</a> ggto))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ExternalTrackingIfc_8h.html#a53782d264b4a0922b960fa79fd2b91a4">setUseTracking</a> (void *tracking, int use)</td></tr>
 </table>
 <hr/><h2>Typedef Documentation</h2>
@@ -260,6 +276,39 @@ Functions</h2></td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a01fdbe4643233dbacdf58e54367d7289a9edacb1bf68d1d7b35f8a7d005785de1"></a><!-- doxytag: member="E5b" ref="a01fdbe4643233dbacdf58e54367d7289a9edacb1bf68d1d7b35f8a7d005785de1" args="" -->E5b</em>&nbsp;</td><td>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a01fdbe4643233dbacdf58e54367d7289a90fe4f553b6a5fc9b373ee6b42bab5b3"></a><!-- doxytag: member="E1B" ref="a01fdbe4643233dbacdf58e54367d7289a90fe4f553b6a5fc9b373ee6b42bab5b3" args="" -->E1B</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a61bf587eb5899585cb3c46fc72f721cf"></a><!-- doxytag: member="ExternalTrackingIfc.h::time_reference_t" ref="a61bf587eb5899585cb3c46fc72f721cf" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Time reference. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a61bf587eb5899585cb3c46fc72f721cfa2c56d07da8a08a92de9453a00e31d55d"></a><!-- doxytag: member="UTC" ref="a61bf587eb5899585cb3c46fc72f721cfa2c56d07da8a08a92de9453a00e31d55d" args="" -->UTC</em>&nbsp;</td><td>
+<p>Universal Time, Coordinated. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a61bf587eb5899585cb3c46fc72f721cfa569efac7b806b48d344a6a986b208931"></a><!-- doxytag: member="GPST" ref="a61bf587eb5899585cb3c46fc72f721cfa569efac7b806b48d344a6a986b208931" args="" -->GPST</em>&nbsp;</td><td>
+<p>GPS system time. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a61bf587eb5899585cb3c46fc72f721cfa8fc7c6036de659fcb61e9aa865cbf7f6"></a><!-- doxytag: member="GST" ref="a61bf587eb5899585cb3c46fc72f721cfa8fc7c6036de659fcb61e9aa865cbf7f6" args="" -->GST</em>&nbsp;</td><td>
+<p>Galileo system time. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a61bf587eb5899585cb3c46fc72f721cfa2fb85f4d41565b22ad15accfde38f821"></a><!-- doxytag: member="GLONASST" ref="a61bf587eb5899585cb3c46fc72f721cfa2fb85f4d41565b22ad15accfde38f821" args="" -->GLONASST</em>&nbsp;</td><td>
+<p>GLONASS system time. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a61bf587eb5899585cb3c46fc72f721cfa5bd8e4e6e6e3122f89b5bbcf111bf32f"></a><!-- doxytag: member="BDT" ref="a61bf587eb5899585cb3c46fc72f721cfa5bd8e4e6e6e3122f89b5bbcf111bf32f" args="" -->BDT</em>&nbsp;</td><td>
+<p>BeiDou time. </p>
 </td></tr>
 </table>
 </dd>
@@ -439,6 +488,87 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6f0557caf0c95e1dbe81ef123da11e6d"></a><!-- doxytag: member="ExternalTrackingIfc.h::registerNewGgtoParametersCb" ref="a6f0557caf0c95e1dbe81ef123da11e6d" args="(void *tracking, void(*callback)(const ggto_parameters_t ggto))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerNewGgtoParametersCb </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>tracking</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const <a class="el" href="structggto__parameters__t.html">ggto_parameters_t</a> ggto)&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2695b6fe49fe8968999724822156ac50"></a><!-- doxytag: member="ExternalTrackingIfc.h::registerNewIonosphereKlobucharCb" ref="a2695b6fe49fe8968999724822156ac50" args="(void *tracking, void(*callback)(const ionosphere_klobuchar_t iono))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerNewIonosphereKlobucharCb </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>tracking</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const <a class="el" href="structionosphere__klobuchar__t.html">ionosphere_klobuchar_t</a> iono)&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec12f66056d2013601ecb07c3e42cca1"></a><!-- doxytag: member="ExternalTrackingIfc.h::registerNewIonosphereNequickCb" ref="aec12f66056d2013601ecb07c3e42cca1" args="(void *tracking, void(*callback)(const ionosphere_nequick_t iono))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registerNewIonosphereNequickCb </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>tracking</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(const <a class="el" href="structionosphere__nequick__t.html">ionosphere_nequick_t</a> iono)&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a893fb744132fa9cf8475bb560121714c"></a><!-- doxytag: member="ExternalTrackingIfc.h::registerNewPvtCalculationCb" ref="a893fb744132fa9cf8475bb560121714c" args="(void *tracking, void(*callback)(const pvt_calculation_t pvtCalc))" -->
 <div class="memitem">
 <div class="memproto">
@@ -535,7 +665,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:34 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 22 2017 17:08:52 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

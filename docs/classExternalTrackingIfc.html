@@ -67,6 +67,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#ac8321225262f7e06530edd12225611c5">newEphemerisData</a> (const <a class="el" href="structephemeris__data__t.html">ephemeris_data_t</a> &amp;ephmData)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#a7f218551a71e887c03290a23f1728fd6">newChannelMeasurements</a> (const <a class="el" href="structchannel__measurements__t.html">channel_measurements_t</a> &amp;chMeas)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#a03485c9bb7400779e20c66b4f008b45d">newPvtCalculation</a> (const <a class="el" href="structpvt__calculation__t.html">pvt_calculation_t</a> &amp;pvtCalc)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#a94008380aca180ea9c08e4cfa288d25e">newIonosphereKlobuchar</a> (const <a class="el" href="structionosphere__klobuchar__t.html">ionosphere_klobuchar_t</a> &amp;iono)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#a4b75166f1c01a7036ba5f9b5cfd7578f">newIonosphereNequick</a> (const <a class="el" href="structionosphere__nequick__t.html">ionosphere_nequick_t</a> &amp;iono)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#a5c9f14c749a283bfa67a13f0f2fcf3a6">newGgtoParameters</a> (const <a class="el" href="structggto__parameters__t.html">ggto_parameters_t</a> &amp;ggto)=0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#a0623b97ea16c421c16edf1cad03b222f">setUseTracking</a> (bool use)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExternalTrackingIfc.html#ad36121b3fadb620823d1f05d25d6a22a">getUseTracking</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
@@ -219,6 +222,78 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5c9f14c749a283bfa67a13f0f2fcf3a6"></a><!-- doxytag: member="ExternalTrackingIfc::newGgtoParameters" ref="a5c9f14c749a283bfa67a13f0f2fcf3a6" args="(const ggto_parameters_t &amp;ggto)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ExternalTrackingIfc::newGgtoParameters </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structggto__parameters__t.html">ggto_parameters_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>ggto</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Provides GGTO (Galileo-GPS time offset) parameters.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ggto</td><td>GGTO parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a94008380aca180ea9c08e4cfa288d25e"></a><!-- doxytag: member="ExternalTrackingIfc::newIonosphereKlobuchar" ref="a94008380aca180ea9c08e4cfa288d25e" args="(const ionosphere_klobuchar_t &amp;iono)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ExternalTrackingIfc::newIonosphereKlobuchar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structionosphere__klobuchar__t.html">ionosphere_klobuchar_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>iono</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Provides the klobuchar ionosphere model parameters.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iono</td><td>klobuchar ionosphere model parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b75166f1c01a7036ba5f9b5cfd7578f"></a><!-- doxytag: member="ExternalTrackingIfc::newIonosphereNequick" ref="a4b75166f1c01a7036ba5f9b5cfd7578f" args="(const ionosphere_nequick_t &amp;iono)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ExternalTrackingIfc::newIonosphereNequick </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structionosphere__nequick__t.html">ionosphere_nequick_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>iono</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Provides the NeQuick ionosphere model parameters.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iono</td><td>NeQuick ionosphere model parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a03485c9bb7400779e20c66b4f008b45d"></a><!-- doxytag: member="ExternalTrackingIfc::newPvtCalculation" ref="a03485c9bb7400779e20c66b4f008b45d" args="(const pvt_calculation_t &amp;pvtCalc)=0" -->
 <div class="memitem">
 <div class="memproto">
@@ -324,7 +399,7 @@ Protected Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 22 2017 17:08:52 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

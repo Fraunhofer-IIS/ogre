@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#a20bddc7c6d719fa872cab2c474655205">time_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpvt__calculation__t.html#ac66697006b0ebd29ed3432a9f3d8d397">time_status</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpvt__calculation__t.html#afd507716b6e16ad5e6d98c2accb08634">timestamp</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpvt__calculation__t.html#a56b5938eb85122e1599069120a52cf22">time_reference</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpvt__calculation__t.html#ac23cb7b9cf81b3f34cc538b8e46e0e91">hw_timestamp</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#a816672bec4c095705ef69d82fc51ee45">coordinate_system_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpvt__calculation__t.html#ad8c34719a77829e4010b43664333d5be">coordinate_system</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#ade15929855a5aaf29026d5316449606e">precision_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpvt__calculation__t.html#a19239b49ed925e32a7bdf8a560f033fb">precision</a></td></tr>
@@ -186,6 +187,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a56b5938eb85122e1599069120a52cf22"></a><!-- doxytag: member="pvt_calculation_t::time_reference" ref="a56b5938eb85122e1599069120a52cf22" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a> <a class="el" href="structpvt__calculation__t.html#a56b5938eb85122e1599069120a52cf22">pvt_calculation_t::time_reference</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Time reference of timestamp (UTC,GPST,GST,GLONASST,BDT). </p>
+
+</div>
+</div>
 <a class="anchor" id="ac66697006b0ebd29ed3432a9f3d8d397"></a><!-- doxytag: member="pvt_calculation_t::time_status" ref="ac66697006b0ebd29ed3432a9f3d8d397" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +225,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Seconds since 1.1.1970 0:00 (UTC) (s). </p>
+<p>Seconds since 1.1.1970 0:00 (time_reference) (s). </p>
 
 </div>
 </div>
@@ -246,7 +261,7 @@ Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 22 2017 17:08:52 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

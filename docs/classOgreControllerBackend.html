@@ -68,6 +68,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a17133646d00090538d08534c1961cb1f">isRunning</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a9d63abec3c7f967311816a05cf8f8b71">loadReceiverPosition</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a59458805a5141b4b94964e1f5298c367">saveReceiverPosition</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#aaf5a53e613b0ebf0cb7c9c5857d5e21b">loadEphemeris</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a9a8b726f5423a7900328956bb1f19552">saveEphemeris</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#ac0278bde556fbe5618c0336857bb2c65">enableSecondaryChannels</a> (bool on)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a8706737a8cc9db4cfad9c4dee5fa04d9">enableTertiaryChannels</a> (bool on)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a8050d4134999e5fb4be96bdd0a1da732">enableGps</a> (bool on)</td></tr>
@@ -82,6 +84,9 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a13599c3b8222418d72366241919f7074">enableEphemeris</a> (bool on)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a81bce76cbf5348c107d17a611a414bae">enableChannelMeasurements</a> (bool on)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a4e499fd63ddeca7e020500748488a4c0">enablePvtCalculation</a> (bool on)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a8f026505546da716dc8f16f8fbc4c332">enableIonosphereKlobuchar</a> (bool on)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#ab81180ba366d3b9f09bd387bc1fed843">enableIonosphereNequick</a> (bool on)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a7aac34141d9e79575fb3b0cff0c4e686">enableGgtoParameters</a> (bool on)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a9556e3dd0037027425a7f3b740e9d3d8">setDataPilotMode</a> (<a class="el" href="DataPilotMode_8h.html#a7e6d6ef1258732cab94f17e62218e43d">DataPilotMode</a> mode)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a3151ea17c4da23e6a04919b31afff873">enablePrintChannelStates</a> (bool on)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOgreControllerBackend.html#a1f2611715d08aa4879ec99162e0e9a98">getOgreVersion</a> ()</td></tr>
@@ -198,6 +203,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7aac34141d9e79575fb3b0cff0c4e686"></a><!-- doxytag: member="OgreControllerBackend::enableGgtoParameters" ref="a7aac34141d9e79575fb3b0cff0c4e686" args="(bool on)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreControllerBackend::enableGgtoParameters </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Enable/disable GGTO (Galileo-GPS time offset) message (OGRP)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>if true GGTO message is enabled, otherwise disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a8050d4134999e5fb4be96bdd0a1da732"></a><!-- doxytag: member="OgreControllerBackend::enableGps" ref="a8050d4134999e5fb4be96bdd0a1da732" args="(bool on)" -->
 <div class="memitem">
 <div class="memproto">
@@ -216,6 +245,54 @@ Private Attributes</h2></td></tr>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">on</td><td>If true GPS L1CA is enabled, otherwise not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8f026505546da716dc8f16f8fbc4c332"></a><!-- doxytag: member="OgreControllerBackend::enableIonosphereKlobuchar" ref="a8f026505546da716dc8f16f8fbc4c332" args="(bool on)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreControllerBackend::enableIonosphereKlobuchar </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Enable/disable Klobuchar ionosphere message (OGRP)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>if true Klobuchar ionosphere message is enabled, otherwise disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab81180ba366d3b9f09bd387bc1fed843"></a><!-- doxytag: member="OgreControllerBackend::enableIonosphereNequick" ref="ab81180ba366d3b9f09bd387bc1fed843" args="(bool on)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreControllerBackend::enableIonosphereNequick </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Enable/disable NeQuick ionosphere message (OGRP)</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">on</td><td>if true NeQuick ionosphere message is enabled, otherwise disabled. </td></tr>
   </table>
   </dd>
 </dl>
@@ -377,6 +454,23 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaf5a53e613b0ebf0cb7c9c5857d5e21b"></a><!-- doxytag: member="OgreControllerBackend::loadEphemeris" ref="aaf5a53e613b0ebf0cb7c9c5857d5e21b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreControllerBackend::loadEphemeris </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Load the last GPS/Galileo ephemris from $HOME/.fhg/ogre/gps_ephemeris.ogrp and $HOME/.fhg/ogre/galileo_ephemeris.ogrp if the local linux time is near to the ephemeris reference time (difference &lt; 2 h). </p>
+
+</div>
+</div>
 <a class="anchor" id="a9d63abec3c7f967311816a05cf8f8b71"></a><!-- doxytag: member="OgreControllerBackend::loadReceiverPosition" ref="a9d63abec3c7f967311816a05cf8f8b71" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -390,7 +484,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Load the last position of the receiver from $HOME/.fhg/ogre.position.ogrp </p>
+<p>Load the last position of the receiver from $HOME/.fhg/ogre/position.ogrp </p>
 
 </div>
 </div>
@@ -419,6 +513,23 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9a8b726f5423a7900328956bb1f19552"></a><!-- doxytag: member="OgreControllerBackend::saveEphemeris" ref="a9a8b726f5423a7900328956bb1f19552" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OgreControllerBackend::saveEphemeris </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Save the GPS/Galileo ephemeris to $HOME/.fhg/ogre/gps_ephemeris.ogrp and HOME/.fhg/ogre/galileo_ephemeris.ogrp. </p>
+
+</div>
+</div>
 <a class="anchor" id="a59458805a5141b4b94964e1f5298c367"></a><!-- doxytag: member="OgreControllerBackend::saveReceiverPosition" ref="a59458805a5141b4b94964e1f5298c367" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +543,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Save the last receiver position to $HOME/.fhg/ogre.position.ogrp </p>
+<p>Save the last receiver position to $HOME/.fhg/ogre/position.ogrp </p>
 
 </div>
 </div>
@@ -672,7 +783,7 @@ Private Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 22 2017 17:08:52 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

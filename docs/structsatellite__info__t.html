@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#a20bddc7c6d719fa872cab2c474655205">time_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsatellite__info__t.html#ab037490d99491a7391c7f137a0d5dccf">time_status</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsatellite__info__t.html#ac12ea2b75e5b1eabbbd39eb98bbbe81e">timestamp</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsatellite__info__t.html#aef7890b32f8911a75172cd2cc657ef2b">time_reference</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsatellite__info__t.html#a75fe0a55535945824e7aab2d328fda0c">hw_timestamp</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsatellite__info__t.html#a39c6c685939142763a65e00c2bc5fa25">satellite_id</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#ad8937bd20b2e9e4b037493a5c41f029c">gnss_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsatellite__info__t.html#aa3b3f82fc0b149b84ef304e4d571ef16">gnss</a></td></tr>
@@ -200,6 +201,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aef7890b32f8911a75172cd2cc657ef2b"></a><!-- doxytag: member="satellite_info_t::time_reference" ref="aef7890b32f8911a75172cd2cc657ef2b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a> <a class="el" href="structsatellite__info__t.html#aef7890b32f8911a75172cd2cc657ef2b">satellite_info_t::time_reference</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Time reference of timestamp (UTC,GPST,GST,GLONASST,BDT). </p>
+
+</div>
+</div>
 <a class="anchor" id="ab037490d99491a7391c7f137a0d5dccf"></a><!-- doxytag: member="satellite_info_t::time_status" ref="ab037490d99491a7391c7f137a0d5dccf" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +239,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Seconds since 1.1.1970 0:00 (UTC) (s). </p>
+<p>Seconds since 1.1.1970 0:00 (time_reference) (s). </p>
 
 </div>
 </div>
@@ -246,7 +261,7 @@ Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 22 2017 17:08:52 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

@@ -68,6 +68,7 @@ Collaboration diagram for correlation_values_t:</div>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#a20bddc7c6d719fa872cab2c474655205">time_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcorrelation__values__t.html#adf316b6dbe42833ef8e01b345ae3d6ed">time_status</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcorrelation__values__t.html#aa750287cda611764817aab3b46cc6caf">timestamp</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcorrelation__values__t.html#a5e49f5534a3c7740e286afaf1fc06fef">time_reference</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcorrelation__values__t.html#a88e51d0301aa0df65f22092aca029503">hw_timestamp</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcorrelation__values__t.html#a8efa56d3ff6cfea5176f4d5227b67132">tow</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint_fast8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcorrelation__values__t.html#a35522424a878b85afded6d380334a54d">hw_channel_id</a></td></tr>
@@ -193,6 +194,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5e49f5534a3c7740e286afaf1fc06fef"></a><!-- doxytag: member="correlation_values_t::time_reference" ref="a5e49f5534a3c7740e286afaf1fc06fef" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ExternalTrackingIfc_8h.html#a61bf587eb5899585cb3c46fc72f721cf">time_reference_t</a> <a class="el" href="structcorrelation__values__t.html#a5e49f5534a3c7740e286afaf1fc06fef">correlation_values_t::time_reference</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Time reference of timestamp (UTC,GPST,GST,GLONASST,BDT). </p>
+
+</div>
+</div>
 <a class="anchor" id="adf316b6dbe42833ef8e01b345ae3d6ed"></a><!-- doxytag: member="correlation_values_t::time_status" ref="adf316b6dbe42833ef8e01b345ae3d6ed" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +232,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Seconds since 1.1.1970 0:00 (UTC) (s). </p>
+<p>Seconds since 1.1.1970 0:00 (time_reference) (s). </p>
 
 </div>
 </div>
@@ -253,7 +268,7 @@ Public Attributes</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Thu Jun 1 2017 10:18:35 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sat Jul 22 2017 17:08:52 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
