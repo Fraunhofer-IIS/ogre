@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['a_5f0',['a_0',['../structgnss__utc__parameter__t.html#a8c977b91845e5d8ff626cc3f55fa7232',1,'gnss_utc_parameter_t::a_0()'],['../structggto__parameter__t.html#a7ac976080e65f0c7bc8f42c77421a88a',1,'ggto_parameter_t::a_0()']]],
+  ['a_5f1',['a_1',['../structgnss__utc__parameter__t.html#a113a489f2d72fc9a60a339bcb8ec9b30',1,'gnss_utc_parameter_t::a_1()'],['../structggto__parameter__t.html#a9152983e623565f08dccd54413a6bcf0',1,'ggto_parameter_t::a_1()']]],
+  ['ac',['ac',['../unioncorrVals.html#ab1748a78225b2da30d45fa9098cfeeab',1,'corrVals']]],
+  ['acf_5fslope',['acf_slope',['../structtracking__init__t.html#ab29f0cd12d672235f3420b2d51fefd95',1,'tracking_init_t']]],
+  ['af_5f0',['af_0',['../structephemeris__data__t.html#a7b4d468d9c5a11b3324b37fa47ff6fe9',1,'ephemeris_data_t::af_0()'],['../structalmanac__t.html#a887b12d5b5e34a77108dc5a91f466b30',1,'almanac_t::af_0()']]],
+  ['af_5f0_5fe1e5a',['af_0_e1e5a',['../structephemeris__data__t.html#a84150bce592e683335b422f21cc0f142',1,'ephemeris_data_t']]],
+  ['af_5f1',['af_1',['../structephemeris__data__t.html#adfad1727a15a5f65f57003e07a92f338',1,'ephemeris_data_t::af_1()'],['../structalmanac__t.html#a5d9bab853ffbf313030e7252b68a99d7',1,'almanac_t::af_1()']]],
+  ['af_5f1_5fe1e5a',['af_1_e1e5a',['../structephemeris__data__t.html#ac7edb46b8ef325275d9f434c7f1643fd',1,'ephemeris_data_t']]],
+  ['af_5f2',['af_2',['../structephemeris__data__t.html#ab33c53e6f7dc330807d0da4f7060b38b',1,'ephemeris_data_t']]],
+  ['af_5f2_5fe1e5a',['af_2_e1e5a',['../structephemeris__data__t.html#ab8032d738c32decd5aecf1eb7d1d348b',1,'ephemeris_data_t']]],
+  ['almanac_5fissue',['almanac_issue',['../structalmanac__t.html#af36babba30098a28c17a59f7a6e4f8c0',1,'almanac_t']]],
+  ['almanac_5freference',['almanac_reference',['../structalmanac__t.html#ae16ace892fd93b7ca0ff5f2ae69cc57b',1,'almanac_t']]],
+  ['amplitude',['amplitude',['../structionosphere__klobuchar__t.html#aa8cb6fc94a01be365f652e374a69a0aa',1,'ionosphere_klobuchar_t']]],
+  ['arg_5fper',['arg_per',['../structephemeris__data__t.html#a4810acacca982eb710876518b57d1335',1,'ephemeris_data_t::arg_per()'],['../structalmanac__t.html#a0ca598975bfdcc028ff3eaf39f65bcd3',1,'almanac_t::arg_per()']]],
+  ['array',['array',['../unioncorrVals.html#a553968dc580a14e3e3d68a98b4da2d8e',1,'corrVals']]],
+  ['authentication_5fstatus',['authentication_status',['../structsatellite__info__t.html#aedc2371b596eeefcbbe756c6325b5f9b',1,'satellite_info_t']]],
+  ['azimuth',['azimuth',['../structsatellite__info__t.html#a50d274bebb3b9ac979ce768ce65cb45e',1,'satellite_info_t']]]
+];

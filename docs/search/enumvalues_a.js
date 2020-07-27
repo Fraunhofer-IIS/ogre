@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['sbas',['SBAS',['../Gnss_8h.html#a0745eb9c0606157614241684b73cd7dea47cc80f30e4ee0408b2b5ab8d51e579b',1,'Gnss.h']]],
+  ['searching',['SEARCHING',['../ExternalTrackingIfc_8h.html#a4d41e48b26ebe9d6f7c34765741a083aaa0c0f46a51df7452ca25be1d4594e8ba',1,'ExternalTrackingIfc.h']]],
+  ['signal_5ftype_5fbeidou_5fb1i',['SIGNAL_TYPE_BEIDOU_B1I',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adeae0ead0c12180ad7dfdd801b10603488d',1,'SignalType.h']]],
+  ['signal_5ftype_5fgalileo_5fe1',['SIGNAL_TYPE_GALILEO_E1',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adeaf30db2e236ed4ebb98f3da7119970d94',1,'SignalType.h']]],
+  ['signal_5ftype_5fgalileo_5fe5',['SIGNAL_TYPE_GALILEO_E5',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adea9c739a1fc04560fcb4195a6e2095be6b',1,'SignalType.h']]],
+  ['signal_5ftype_5fgalileo_5fe5a',['SIGNAL_TYPE_GALILEO_E5A',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adeabbf3aff0c8fbc34dc7d44c2d6cf32037',1,'SignalType.h']]],
+  ['signal_5ftype_5fgalileo_5fe5b',['SIGNAL_TYPE_GALILEO_E5B',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adea3094e34f7049e34f66a7e30e34c16ffb',1,'SignalType.h']]],
+  ['signal_5ftype_5fglonass_5fg1',['SIGNAL_TYPE_GLONASS_G1',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adea5746e459dcf30e9f71a925598b85822f',1,'SignalType.h']]],
+  ['signal_5ftype_5fglonass_5fg2',['SIGNAL_TYPE_GLONASS_G2',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adea7b6068e5e7592056cec0c4f4cc4ef100',1,'SignalType.h']]],
+  ['signal_5ftype_5fgps_5fl1ca',['SIGNAL_TYPE_GPS_L1CA',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adeaa9e324e544c7e9539ce84ead9fc2b736',1,'SignalType.h']]],
+  ['signal_5ftype_5fgps_5fl2c',['SIGNAL_TYPE_GPS_L2C',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adea4fe642f6e7cefa207f1511848f44beee',1,'SignalType.h']]],
+  ['signal_5ftype_5fgps_5fl5',['SIGNAL_TYPE_GPS_L5',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adea82ca8b12acef0a217713ed383e98d79a',1,'SignalType.h']]],
+  ['signal_5ftype_5fsbas_5fl1ca',['SIGNAL_TYPE_SBAS_L1CA',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adea2063b4458e7cf4860c05edafaba8a196',1,'SignalType.h']]],
+  ['signal_5ftype_5funknown',['SIGNAL_TYPE_UNKNOWN',['../SignalType_8h.html#aad6ca876084fe82fadbaf26d6e919adeae28c2b1e25a8e9f18abb60deb5207155',1,'SignalType.h']]],
+  ['synced',['SYNCED',['../ExternalTrackingIfc_8h.html#a4d41e48b26ebe9d6f7c34765741a083aa59faf14a7ce5cad56789ae9b4905f923',1,'ExternalTrackingIfc.h']]],
+  ['system',['SYSTEM',['../ExternalTrackingIfc_8h.html#a20bddc7c6d719fa872cab2c474655205a57cc238145ec1361c72c327674c0d754',1,'ExternalTrackingIfc.h']]]
+];

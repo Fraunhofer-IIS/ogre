@@ -1,3 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structiq__t.html" title="iq_t" alt="" coords="53,6,96,34"/>
+<map id="correlation_values_t" name="correlation_values_t">
+<area shape="rect" id="node2" href="$unioncorrVals.html" title="corrVals" alt="" coords="39,256,110,283"/>
+<area shape="rect" id="node3" href="$structiq__t.html" title="iq_t" alt="" coords="53,5,96,32"/>
 </map>

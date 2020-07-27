@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['nco_5fvalues_5ft',['nco_values_t',['../structnco__values__t.html',1,'']]],
+  ['newalmanac',['newAlmanac',['../classExternalTrackingIfc.html#a02e6f01fb70275ee79e4ff9680e208bf',1,'ExternalTrackingIfc']]],
+  ['newchannelmeasurements',['newChannelMeasurements',['../classExternalTrackingIfc.html#a7f218551a71e887c03290a23f1728fd6',1,'ExternalTrackingIfc']]],
+  ['newcorrelation',['newCorrelation',['../classExternalTrackingIfc.html#a848fe743b3728fdace342bbbab6e8f7a',1,'ExternalTrackingIfc']]],
+  ['newephemerisdata',['newEphemerisData',['../classExternalTrackingIfc.html#ac8321225262f7e06530edd12225611c5',1,'ExternalTrackingIfc']]],
+  ['newggtoparameter',['newGgtoParameter',['../classExternalTrackingIfc.html#ad74ddb78a8a92e6603bf3b5101fe49fa',1,'ExternalTrackingIfc']]],
+  ['newgnssutcparameter',['newGnssUtcParameter',['../classExternalTrackingIfc.html#ac405ee0c5d8187813f5f0b3bff370f49',1,'ExternalTrackingIfc']]],
+  ['newionosphereklobuchar',['newIonosphereKlobuchar',['../classExternalTrackingIfc.html#a94008380aca180ea9c08e4cfa288d25e',1,'ExternalTrackingIfc']]],
+  ['newionospherenequick',['newIonosphereNequick',['../classExternalTrackingIfc.html#a4b75166f1c01a7036ba5f9b5cfd7578f',1,'ExternalTrackingIfc']]],
+  ['newpvtcalculation',['newPvtCalculation',['../classExternalTrackingIfc.html#a03485c9bb7400779e20c66b4f008b45d',1,'ExternalTrackingIfc']]],
+  ['newsatelliteinfo',['newSatelliteInfo',['../classExternalTrackingIfc.html#ad2d215e65a123cd080abecb76d4209a7',1,'ExternalTrackingIfc']]],
+  ['nr_5fch_5fmeas',['nr_ch_meas',['../structchannel__measurements__t.html#a857faa053866c88c5ff19139c4a993a5',1,'channel_measurements_t']]],
+  ['nr_5fof_5fcorrelation_5fpoints',['NR_OF_CORRELATION_POINTS',['../pkg__hal_8h.html#a56cfbcc60e8af85be48374f073ca7adb',1,'pkg_hal.h']]],
+  ['nr_5fof_5fdummy_5fcorrelators',['NR_OF_DUMMY_CORRELATORS',['../pkg__hal_8h.html#ad162d356e3c900c432cf417a617d9d7d',1,'pkg_hal.h']]],
+  ['nr_5fof_5fl1band_5fhw_5fchannels',['NR_OF_L1BAND_HW_CHANNELS',['../pkg__hal_8h.html#a4074ecef5d1544a9f2687f949c3d7f84',1,'pkg_hal.h']]],
+  ['nr_5fof_5fl2_5fe5_5faltboc_5fhw_5fchannels',['NR_OF_L2_E5_ALTBOC_HW_CHANNELS',['../pkg__hal_8h.html#a71f31854aaf8c7552c10886dd5c1952b',1,'pkg_hal.h']]],
+  ['nr_5fof_5fl5e5a_5fhw_5fchannels',['NR_OF_L5E5A_HW_CHANNELS',['../pkg__hal_8h.html#a7e632eb81756b0862821c7026a64ef4f',1,'pkg_hal.h']]],
+  ['number_5fof_5fsatellites',['number_of_satellites',['../structpvt__calculation__t.html#a45e224b155848960e0231403f6ae654e',1,'pvt_calculation_t']]]
+];
